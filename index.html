@@ -1,27 +1,203 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tablas y Listas</title>
+    <style type="text/css">
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 80px
+ 
+        }
+        h1{
+            color: rgb(20, 51, 228);
+        }
+    ul{
+        list-style-type: disc ;
+        margin-left: 10px;
+    }
+    table{
+        background-color: rgb(126, 177, 253);
+        width: 100%;
+        border-collapse: collapse ;
+        margin: 20px 0;
+    }
+    th td{
+        border: 1px solid #3370cc ;
+        padding: 20px
+    }
+    th{
+        background-color: #304fff;
+        text-align: center;
+    }
+    td{
+        text-align: center;
+    }
+    p{
+        font-family: 'Times New Roman', Times, serif ;
+        font-size: 20px;
+        color: #000 ;
+    }
+       .container{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #4c9bf5;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        }
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        label{
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+
+        }
+        input, textarea, select{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"]{
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: greenyellow;
+        }
+
+    footer{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    </style> 
 </head>
 <body>
-    <h1><font size=20 color=red face=arial>practica html</font>
-        <hr>
-        <h2><font size=25 color=yellow face=verdana>lunes</font></h2>
-        <br>
-        <h3>martes</h3>
-        <br>
-        <h4>miercoles</h4>
-        <br>
-        <h5>juevez</h5>
-        <br>
-        <h6>viernes</h6>
-        <br>
-        <hr>
-        <img src="imagenes/images.jpg"width="50%">
-        <hr>
-        <footer>&copy;edwin anchico 2025</footer>
+ <head title="Listas y Tablas>">
+    <h1>Bienvenido al aprendizaje de Listas y Tablas</h1>  
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+            <li><a href="#contacto">Contáctenos</a></li>
+            <li><a href="#servicio">Servicios</a></li>
+        </ul>
+    </nav> 
+ </head>
+ <section id="listas">
+    <h1>Listas y Tablas en HTML</h1>
+    <h2>Listas de Redes Sociales</h2>
+    <ul>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Twitter (X)</li>
+    </ul>
+ </section>
+ <section id="acerca">
+    <h2>Tabla de Redes Sociales</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Nombre Red Social</th>
+            <th>Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="imagenes/instagram-blog.webp" width="50%" height="50%"></td>
+            <td>Instagram</td>
+            <td>
+                <p align="justify">
+                   Instagram es una red social y aplicación móvil gratuita para compartir fotos y vídeos de forma visual, permitiendo a los usuarios capturar, editar y compartir contenido con sus seguidores. Es una plataforma donde se puede interactuar con otras personas a través de comentarios, "me gusta" y mensajes directos. 
+                 </p>
+            </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td><img src="imagenes/Facebook-Logo-2019.png" width="50%" height="50%"></td>
+            <td>Facebook</td>
+            <td>
+                <p align="justify">
+                    Facebook es la principal red social que existe en el mundo. Una red de vínculos virtuales, cuyo principal objetivo es dar un soporte para producir y compartir contenidos. Llegó para ampliar las posibilidades de relación social y causó una revolución sensible en el mundo de las comunicaciones.
+                 </p>
+            </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td><img src="imagenes/TWITTER-1.jpg" width="50%" height="50%"></td>
+            <td>Twitter(X)</td>
+            <td>
+                <p align="justify">
+                     Ahora conocido como X, es un servicio de microblogging y red social donde los usuarios comparten mensajes cortos de texto, imágenes y vídeos. Estos mensajes se llaman "tuits" (ahora "publicaciones"). Es una plataforma para conectar con otros, seguir cuentas y mantenerse al día sobre noticias, eventos y diversos temas.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+ </section>
+ <section id="Contacto">
+    <h2>Sección de Contacto</h2>
+    <p>
+        Si tiene dudas y desea resolverlas, por favor contactar a través de WhatsApp o el Correo Electrónico
+    </p>
+
+
+    <div class="container">
+        <h1>Formulario de Contacto</h1>
+        <form action="#" method="post">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo Electrónico: </label>
+            <input type="email" id="email" name="email" required>
+            <label for="teléfono">Teléfono: </label>
+            <input type="tel" id="teléfono" name="teléfono" required>
+            <label for="mensaje">Mensaje: </label>
+           <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+           <label for="país">País: </label>
+           <select id="país" name="pais" required>
+            <option value="disable selected">Selección</option>
+            <option value="es">España</option>
+            <option value="co">Colombia</option>
+            <option value="mx">México</option>
+            <option value="ar">Argentina</option>
+
+           </select>
+           <input type="submit" value="Enviar"
+        </form>
+    </div>
+
+
+
+
+
+
+    <!--Si deseas agregar más contenido lo puedes hacer-->
+    <footer>
+        <p>
+            &copy; Edwin Anchico 2025. Mi primera tabla con listas  
+        </p>
+    </footer>
+ </section>
+ <div class="ratio ratio-4x3">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GVqOme3CHO8?si=cVxQJhqtT_4jy_mB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ <div class="card" style="width: 18rem;">
+  <img src="imagenes/instagram-blog.webp" width="100px" height="100px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Instagram</h5>
+    <p class="card-text">instagram es una red social y aplicación móvil gratuita para compartir fotos y vídeos de forma visual, permitiendo a los usuarios capturar, editar y compartir contenido con sus seguidores. Es una plataforma donde se puede interactuar con otras personas a través de comentarios, "me gusta" y mensajes directos.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 </body>
 </html>
